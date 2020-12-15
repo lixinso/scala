@@ -13,4 +13,6 @@ WORKDIR /myworkdir
 COPY ./main.py .
 COPY ./second.py .
 
+RUN apt install -y scala
+
 CMD ["/bin/bash"]
