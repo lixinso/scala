@@ -36,3 +36,5 @@ dpkg --print-architecture
 
 
 https://hub.docker.com/r/hseeberger/scala-sbt/
+
+Doesn't work well for M1
