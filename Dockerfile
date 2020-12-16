@@ -10,8 +10,8 @@ RUN mkdir /myworkdir
 VOLUME ["/myworkdir"]
 WORKDIR /myworkdir
 
-COPY ./main.py .
-COPY ./second.py .
+#COPY ./main.py .
+#COPY ./second.py .
 
 RUN apt install -y scala
 

@@ -22,8 +22,15 @@ brew install sbt
 # Docker
 
 ```
-$ docker build --tag sample-scala:1.0 .
-$ docker run -v `pwd`:/app  --rm -it --name sample-scala sample-scala:1.0
+$ docker build  --platform linux/amd64  --tag sample-scala-x86:1.0 .
+$ docker run  --platform linux/amd64 -v `pwd`:/myworkdir  --rm -it --name sample-scala-x86 sample-scala-x86:1.0
+
+
+$ docker build --tag sample-scala-arm:1.0 .
+$ docker run -v `pwd`:/myworkdir  --rm -it --name sample-scala-arm sample-scala-arm:1.0
 
 #python3 main.py
 ```
+
+dpkg --print-architecture
+
