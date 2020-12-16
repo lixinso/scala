@@ -34,3 +34,5 @@ $ docker run -v `pwd`:/myworkdir  --rm -it --name sample-scala-arm sample-scala-
 
 dpkg --print-architecture
 
+
+https://hub.docker.com/r/hseeberger/scala-sbt/
