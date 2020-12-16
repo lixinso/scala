@@ -1,4 +1,4 @@
-FROM python:3
+FROM ubuntu:20.10
 RUN apt update
 RUN apt upgrade -y
 RUN apt install -y wget
